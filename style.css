@@ -128,20 +128,32 @@ fa-gem{
   .navbar__menu{
     display: flex;
     flex-direction: column;
+    grid-template-columns: auto;
     width: 100%;
+    margin:0;
     height: 90vh;
     position: absolute;
     top: 80px;
     left: -100%;
     opacity: 1;
     transition: all 0.5s ease;
+    z-index: -1;
+
+ 
+      /* display: flex;
+     
+      margin: 0;
+      width: 100%;
+      position: absolute; */
+    }
   }
   .navbar__menu.active{
     background: #242222;
-    left: 0;
+    top: 100%;
     opacity: 1;
     transition: all 0.5s ease;
-    z-index: 1;
+    z-index: 99;height: 50vh;
+    font-size: 1.6rem;
   }
   .navbar__item{
     width: 100%;
